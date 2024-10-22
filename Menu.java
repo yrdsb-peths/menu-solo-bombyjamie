@@ -17,16 +17,22 @@ public class Menu extends World {
 
     currentAvatar = avatarQueue.peek();
     screenLabel = new Label("Menu", 75);
-
+    avatarButtonLabel = new Label("Change Avatar", 25);
+    instructionButtonLabel = new Label("Instructions", 25);
+    highScoreButtonLabel = new Label("High Scores", 25);
     avatarLabel = new Label(currentAvatar, 100, 100);
     avatarLabel.setImage(currentAvatar);
 
     addObject(avatarLabel, 300, 200);
     addObject(screenLabel, 300, 100);
-
     addObject(new Button(this::cycleAvatar), 300, 250);
     addObject(new Button(this::goInstructions), 300, 300);
     addObject(new Button(this::highScore), 300, 350);
+    addObject(avatarButtonLabel, 300, 250);
+    addObject(instructionButtonLabel, 300, 300);
+    addObject(highScoreButtonLabel, 300, 350);
+
+    
     
   }
   private void loadAvatars() 
