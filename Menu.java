@@ -5,6 +5,9 @@ public class Menu extends World {
   private GreenfootImage currentAvatar;
   private Label avatarLabel;
   private Label screenLabel;  
+  private Label avatarButtonLabel;
+  private Label instructionButtonLabel;
+  private Label highScoreButtonLabel;
   public Menu() {
     super(600, 400, 1);
 
