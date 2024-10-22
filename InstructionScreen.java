@@ -2,7 +2,7 @@ import greenfoot.*;
 
 public class InstructionScreen extends World {
     private Menu menuScreen;
-    private String[] instructions = {   "Instruction 1", "Instruction Screen 2" };
+    private String[] instructions = {   "Instruction Screen 1", "Instruction Screen 2" };
 
     private int currentIndex = 0;
     private Label instructionLabel;
