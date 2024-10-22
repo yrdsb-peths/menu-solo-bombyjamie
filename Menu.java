@@ -22,8 +22,9 @@ public class Menu extends World {
     addObject(screenLabel, 300, 100);
 
     addObject(new Button(this::cycleAvatar), 300, 250);
-    addObject(new Button(this::highScore), 300, 350);
     addObject(new Button(this::goInstructions), 300, 300);
+    addObject(new Button(this::highScore), 300, 350);
+    
   }
   private void loadAvatars() 
   {
