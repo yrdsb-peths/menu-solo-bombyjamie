@@ -5,6 +5,7 @@ public class Menu extends World {
         super(600, 400, 1);
 
     addObject(new Button(this::goInstructions), 300, 340);
+    addObject(new Button(this::goInstructions), 300, 340);
   }
 
   public void goInstructions() {
