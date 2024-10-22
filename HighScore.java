@@ -6,6 +6,7 @@ public class HighScore extends World {
 
     private Map<String, Integer> highScores;
     private Menu menuScreen;
+    private Label goBackButton;
 
     public HighScore(Menu menuScreen) 
     {
@@ -15,7 +16,10 @@ public class HighScore extends World {
         loadScores();
         displayScores();
 
+        goBackButton = new Label("To Menu", 25);
+        
         addObject(new Button(this::goBack), 300, 350);
+        addObject(goBackButton, 300, 350);
     }
 
     private void loadScores() 
