@@ -22,7 +22,7 @@ public class HighScore extends World {
     {
         highScores.put("Jamie", 100);
         highScores.put("Zia", 80);
-        highScores.put("Donquavious", 120);
+        highScores.put("Donquavious", 90);
     }
 
     private void displayScores() 
